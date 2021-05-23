@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="images/style.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+			integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+			integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Doob</title>
+	<link href="main.css" rel="stylesheet"></head>
+
+	<body>
+		<section class="container-fluid">
+			<header class="header">
+				<img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAeCAYAAAB6xNMdAAAE0ElEQVRoge2Ya4iWRRTHf+tu2UVXbXWTyk3KMgsWB0ULbTeq2SRatujyoYtlUQjSlSiI+VRTEBR2kyKIoGLDDyWpEDVLpmClRZO0drNINwQzdS2025bGiXllOj3v7vtukrC8f3jgOTPznDnznzPnnHnqGKEw1l8OrMhW92QM7q5KVttgrL9pkP4DwB6gD+iNwR0YqSTmaABerHBsv7F+JfBIDO6r/8e8I4NRVcw6AbgR+NRYv3gkkaChSfkTWJs97wHfqzFHA8+OZGIalLwvBndB3mCsl2Asbc8AZ2ddTxjrQwzum8EmMNYLiVOBcaIf2B6D+6kaI5MNU4Bm4HdgRwxuZzU6lL4xyaZ6YGsM7se8X5PyL8TgDgJrjPXnAx8Dp6ZBo4H7gdvKTNwG3AtcDBybdR0w1n8ELAWWJ/3ljBciHgCuAiaqPtmMF4BllZJsrG8CngKuydYu9vQA98XgNlFNTInB7UkG5ugqM/lD6Qh2KkJKc84BXgVeS55UpKMD+AxYrAlJOF2CvmyUsX5aBUtoBNYB1ypnEHtkrg3G+ouoMtAKXgf+yORmY/10tZibAae++xpYmTwtxxXA03oSY/0ZqcYYkzX3A28C7wC/Ze1CzipjvSZf44Z0/OX4bQS+UP3i+S8Z68dVRUoM7lfgS9Xcki1GDHtY9d8DnBmD64rBzQIWqEXdmkjI8SBwXCavlpgSg7s0Bie7KeM/z/rPAm4ZwvyGlDhaYnBzY3AzgPmpDivhJGBRtZ4i2KXkE7J3MXhyJq+JwS3N40YM7i2pLrMxEkSvKwnG+mOSB5UgG7EwBrc/0/EdsETZcf0Qdg9ILInBHcqmMbj1BSGhczik6BiQ7/pc1beqjI43lHxu9j4zuXIJa2Nw/QU63gXyADvbWH/UIHavi8FtL2hfruTW4ZByipJ3Z+/Nqu/bMjr6lDwpe588xNi/kbxva9ZUr7xWo7AKj8HtVWuYWBUpxvqWVC+UIIZtzuRKL5g6DeffaZvKpuwCDPeC+485qvWU25W8KaXqEn5Q/VMohva2PE7tqFAHeZBPl9fdg4w9rajRWD8WaMqa+ismxVgvNcndqllfJjco+bIy6nT7xuz9kxQUS2gz1jcW2DMPGJ81xRjcgB6Xod1YP6mg/UrlYZs1KaOM9VOzZ4axvtNY/0qqG+qzsZISn1Pf96jd6kh1i15MTq64bvehlQX3swrExwPPG+tHZzompWtHjm4Gh2S1bmP9+EzPbOAx9dXqOmN9NWe2BHHx9qJfCMb6JQUGy+73Jnefr47tyzG4hUrHOanQyzOdZI71KTNdCIzN+iSgt8bg9mU69E+mvjS/ZKwPk5cZZYuEgunDyT7iDXPK/VOJwS1L94scM1Md0aaM6EllvNYhwftqle5PTneWLkWIkNWZE1IGd6SxjamemqVskUp9UQxu11CkDKRfB3KBexyYF4OzqXgqixjcncAl6f5T9LeuN10kF6TjUkSuXAtaATm6+wuGiF2PJg/ZXNCvsSXVQ6sLMtoHyfNlzmGnsIohdwlgWtrdX4BtMTidYQaFsb4hlfJNaUd3xuC2/AebTpRjknRtK1PU1VBDDdXjsMeUg+d1yEWt/QjsxYS699/eezgUDSclj3jUSClAjZQC1EgpQI0UDeAvYk95F+waSSYAAAAASUVORK5CYII=" alt="Logo" />
+				<section class="container">
+					<nav class="menu">
+						<section class="menu__left">
+							<a href="#">Home</a>
+							<a href="#about">About us</a>
+							<a href="#portfolio">Portfolio</a>
+							<a href="#blog">Blog</a>
+							<a href="#contact">Contact us</a>
+						</section>
+						<section class="menu__right">
+							<select class="menu__language">
+								<option value="EN" class="language__item">EN</option>
+								<option value="VIE" class="language__item">VIE</option>
+							</select>
+
+							<button class="btn btn--border-smart__rounded menu__contact">
+								Contact Us
+								<i class="bx bx-right-arrow-alt bx-md"></i>
+							</button>
+						</section>
+						<i class="bx bxs-chevron-up bx-md close__bar"></i>
+					</nav>
+				</section>
+				<i class="bx bx-menu bx-md open__bar"></i>
+			</header>
+
+			<main class="main">
+				<section class="container">
+					<!-- TODO : Banner -->
+					<section class="banner">
+						<section class="banner__text">
+							<h1 class="banner__heading wow fadeInUp">
+								The Spirit of Digital Agency
+							</h1>
+							<p class="banner__description wow fadeInUp" data-wow-delay=".1s">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Aperiam, dolorem obcaecati nihil modi laboriosam voluptate!
+							</p>
+							<section class="banner__action wow fadeInUp" data-wow-delay=".2s">
+								<button class="btn btn--border-rounded">More About us</button>
+								<button class="btn btn--border-rounded btn__action">
+									Get in touch
+								</button>
+							</section>
+						</section>
+
+						<section class="banner__image">
+							<img
+								class="banner__image--right-back"
+								src="images/Hero_bg.png"
+								alt="banner background"
+							/>
+							<img
+								class="banner__image--right-front"
+								src="images/Hero_image.png"
+								alt="banner image"
+							/>
+						</section>
+					</section>
+
+					<!-- TODO : Service -->
+					<section class="service">
+						<section class="service__text wow fadeInUp">
+							<h2 class="service__heading">
+								Anything you need, we've got you covered
+							</h2>
+							<button class="btn btn--border-rounded btn__action">
+								Get in Touch
+							</button>
+						</section>
+						<section class="cardList">
+							<section class="card wow fadeInUp">
+								<img
+									class="card__image"
+									src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTciIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA1NyA1NiI+CiAgPGltYWdlIGlkPSJJY29uIiB3aWR0aD0iNTciIGhlaWdodD0iNTYiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRGtBQUFBNENBWUFBQUJIUkZBZ0FBQUVLa2xFUVZSb2dlMmJYNGdWVlJ6SFA3T3NtWldCb2xLdEpENUVZSVdNV2pHcEpjZ01hbGxKQ3EyK0NZbHZFdUtETVJUSlVBLzZrTkJUUlMvaHRSVHhieXpjRWJMVWhtSmh6QklVSDBSUUN3WERGZGEvTmZHVDM4VHM3TDI3dDJabTkrNDRYN2djenB4enorLzcyVHZ6TytmTXpCb0FwdTA5REd3QlZnT1BNZmIxQjFBRFBneDl0ODh3YmU4UjRCZ3dHN2dEbkFiK0hzT1lIY0RUd0FQQWI4Q0NUcUZWd0Z0U2hyNTdwZzJNWnBKcGUwOEJ2d0xQeWhrcTFOMDY0TFV5QUlwQzN6MHJQRnJ0RnNqSHRUTE50TDNuUnRGYmJsS09hVHJlMUk3VXdHdkdLRmRhQXpoaXlINHQzelp0enhoVmV4bWwvdU5MOEI1WERIa0ZDSUFad0V0akVTNGg4ZitrOGdnWHlkTjFoNWFyUjlOaERvcjl4enpJUEJrQjU0RVhnRXZBVmFBcjlOMDdlVVdOTEdjQ3NCWjRUUlBkNzhBaDRFc2pxTi9JSzQ1cGUrT0FpOEJrNEFuZ1p6azcvLzBsUTkrOURCeVdiQVFzeml0d1pEblRnVjdnVTJDSnpzbEx0TjZyN1hscHNmby9yRHozbE02dU5TMXp5YktSNWNoaVl6OHdDK2dCNWdEanRlelI0L3UxWHg2S2ZkZVNZNlVoOXdJM2dSV203VTNJSWVneUJaSWtzTndJNnFFUjFHOUxLWFU5UGtmN1paTDZYYUgrOXliSEd2QVhESDMzdW1sN0I0RlZ3T3ZBTnhsakw5THlGNEdLTENmZExzY3Q3WGNnWXl6eEt4dU4zY0tSYkdoMG10UVVzanNIeU1sYXJ0ZlBjUDJ5S002cXRmUVlqU0I3ZE4yMzFMUzlTYUh2L3BtRGdUM0FoUWJISmVtOGxYVnc4YW5KN0pyNkg2QkJrS0h2M2pKdGI0K21mREh3UlZZVGtrbU5vSDRrZlRDeW5FVjVRQUlyZFd2MWxmaFBONllUVDZ4NElsM1g3c3M4OWZlT1ZnZWRxZ3dCK1Ixd0VuZ2UyTnF1b09wcnEvbzhxYjRIcWVIOEZQcHVaTnFlWE1nL0FodUJlYWJ0ZmFJNzdic3R4TzlQVHNhaWhRdVhkdW8xR09zQ2QvOUttNWJ0MFVNdGpOK3BHK0ozZ1plQlBwa2p4WGZMa0FwNnlyUzlGNEdkd0N2NmFWV3lBSGd6MVZjQXp5WHFNeHVNOVJud3huK0lJem9oTTBIb3U2ZWJkUmh5cFNGZk5HMXZMdkNxWkZ0ZEQ3YWlueHIwNlZmNFpEMnRSdDlycGt1YVNiOE5mWGZJZTFMRExxZDBnSVA2K2Q4NmVyVG44cUJmMTNKbXBXSjluQ1ZHTXpWTFBLVlNCVmtXM1JlUWVlM2podFBYa2VYY2JORG53WkVJWGpSa1BEbFBiQUkwTHRXdkVCVU5HVS9RMjQyZy9sNjZNYktjajRETmlYNkZxT2hyY3BjdUF6ZEVsalBnVnFmV04yajdyaUpORlBwTEdrSDlYR1E1bTNVUi9YMWtPZnVBVThBenVqQ1ErSnVrWDVFK0NzK3VSbERmSmxzMjNkREt2dThETGFXK1R0c0wxWWhNSVVaUS8xenU1ZW9pZjVXV1hYcThjSTNVRkNLZ3NtUC9ZYVRpSlZXdGVNcWlDcklzcWlETG9ncXlMS29neTZJS3NpeXFJTXVpQ3JJc3VtOGc1U1c3THRQMnByYUJuOXlrUEhMTDVVcUhQbVNWMnlBMTAvYW1sQVJ3aXI0L0lGdzc1UVhDUjRIaituajZObkNtWkMvYXo0Ly9aVUpBMzljWGxGcDltdHpPa3FmUWNvWnVDWDIzN3g4M0ZSNkJIYzBPRXdBQUFBQkpSVTVFcmtKZ2dnPT0iLz4KPC9zdmc+Cg=="
+									alt="mail icon"
+								/>
+								<h3 class="card__heading">Web & Graphic Design</h3>
+								<p class="card__description">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Nobis ut dolorum accusantium ipsam? Ipsa, sapiente?
+								</p>
+							</section>
+							<section class="card wow fadeInUp">
+								<img
+									class="card__image"
+									src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjUiIGhlaWdodD0iNDciIHZpZXdCb3g9IjAgMCA2NSA0NyI+CiAgPGltYWdlIGlkPSJJY29uIiB3aWR0aD0iNjUiIGhlaWdodD0iNDciIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRUVBQUFBdkNBWUFBQUM4Q2FkdkFBQUQ3a2xFUVZSb2dlMmFTNGhjUlJTR3YzS1NpWkg0amlpSXVGQjBvUzdhSjRVTXhrZVhqQVlVSXo0SUJCTWthRnlLVGt5YUxLVEZCMjU5SU1xc29vS2dFb2tqZGVORU0yaVJrTkFMczFBMGloQlJFY1NZWU14b0xEblQ1NFpycDJjY3NhdGIrL2EvcWJsMXorMTd6a2ZWcWFvejF3QlVxdlZoNEdGZ0RYQWgvYTh2Z0hIZzJVWldtemFWYW4wUjhCNndURVAvSHZpMWp6R2NDSnl0ZjM4STNMd0FlRlFCN0FQdWFXUzEzVDEyTXJrcTFmcVZ3T3ZBZFJML0NjQnFmZW5LTWdBUWFaejM2dVZxbVE0Uk9OVElhaWYzMkxkNWFXUmtkQXg0c0dDN2RXcHE0cUdSa2RIUGdZV0YvdHVCcTRFTmhiNDlVMU1USy9LTFNyVitFRmdpMDBGMHRQZmh6VnVuQStjWGpNL1U5anhnVWFGZjV2NnBMYmJmdEx4a0p1NThKQnhvWkxYVGVodGI5MVdwMW44U1VKSVRTcTk4T2dpVkJab3RMd2FHK3hqTU5QQ1pMbzh6eWlFc0JqNEZMdWlkYjEzWFBvMzdHSVJoQmJBSG1QaWZKY3AvcWlGZ0ZMZ2lmKzdZZEFCZUJ0WTJzbHI4ejRmeEwxV3AxamNCTHdIM3l5L2xpZkVQWUt3TUFHaHVsaVRPUi9JUm4wTTQyTWhxUC9iV3RlNnFrZFZrZVR4RUFVS3BWWG9JRENBMFZYb0lEQ0EwVmR3bkpGTzA3aVRnVGRtTW1lQTN0cjRuV25jS0lJV09ZSUkvckgyM0FaK1k0TDlNN1YveWtSQ3RrK1BzTmlsakFYZEg2eGEyTVZzRnZBODhyYzlJcGV0dFlFZTBMbm5OTXlrRUJlQUJxM3YxWlNiNDM5cVkzcXJ0RG0xM0FlOEE1d0lmcEFhUkRFSzA3Z3dGSU5XZHZWSVVNc0h2YjJPM1dHdWN2d09aOUpuZ2Z3SHVMSUFJMGJyTFV2bWFCRUswN2l3OXF1WUFiakRCZnp1TCtZMWFCZnJJQkg4Zzd6VEJUeXVJTGNCU1lESVZpSTVEVUFDVHdLV1MyQlRBRDNNOGNvdTJXMXR2S0lnN2dGY0xJQzd2dE04cFJzSmJDdUE3blFKekFhQUFZYUxkVFJQOFVVMmNPWWp0MGJxck91bHdDZ2pQQUpMOHpnRWVtOHN3V25lSkZrSy9Oc0h2bmMxT1FlUkpVNWJUaXpycGNNY2htT0MzYUxsYjF2dXhhTjFUYzVpUGF0dDJGT1NLMWttSi9VVzlYR2VDMzl4Sm41TWtSaFA4dThEeUFvam5vbldtamVseWJZL0xCN2tVd1BOYTgxaGpnbitoMC80bVd5Sk44Sk1GRU9za2tDSUkzU1ZlQ3h6UlJIcWNvblhyQ3dCV21lREhVL2lhZExPa0lHNENmZ1lla0NFZHJSdlMyOWZydG4yNzdnditJZ1h3WkFGQVI2ZEFVY20zelNiNGp3R25JTllDVCtndDJVamRCV3hxZlNaYWQ1OENrQVM3SWlVQXVuV0FNc0h2ak5ZSmlGZDBDVVVQU20vTThzZzJyWHcvcm9rMnFib0NJUWVoKzRmNTJPN1hVMlZYVlBwNkFnTUlUWlVlQWdNSVRaVWVBZ01JVFpVZUFnTUlUZVVRaHY3T3NFODFFN2RBK0VvK1k2dFU2OWVVS2ZwS3RTN1ZxU1VTdjBESWo2ZWI5VXZQdnBmRytackdPVjc2YjV2bG4wS2wvOHE5a2RXbS93UlZYeXJoazM5QS9RQUFBQUJKUlU1RXJrSmdnZz09Ii8+Cjwvc3ZnPgo="
+									alt="mail icon"
+								/>
+								<h3 class="card__heading">Web & App Development</h3>
+								<p class="card__description">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Nobis ut dolorum accusantium ipsam? Ipsa, sapiente?
+								</p>
+							</section>
+						</section>
+					</section>
+
+					<!-- TODO : About -->
+					<section class="about" id="about">
+						<img
+							class="wow fadeInUp"
+							src="images/About_image.svg"
+							alt=""
+						/>
+						<section class="about__detail wow fadeInUp">
+							<h5 class="about__subheading">OUR COMPANY</h5>
+							<h3 class="about__heading">Some Fine Words About Us</h3>
+							<p class="about__description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil
+								animi enim suscipit ab inventore.
+								<br />
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+								quisquam!
+							</p>
+
+							<section class="arrow">
+								<i class="bx bx-left-arrow-alt bx-sm"></i>
+								<i class="bx bx-right-arrow-alt bx-sm"></i>
+							</section>
+						</section>
+					</section>
+
+					<!-- TODO : Portfolio -->
+					<section class="portfolio wow fadeInUp" id="portfolio">
+						<h2 class="portfolio__heading">See some of our Creative work</h2>
+						<section class="gallery">
+							<img src="images/slide1.jpg" alt="slide item" />
+							<img src="images/slide2.jpg" alt="slide item" />
+							<img src="images/slide3.jpg" alt="slide item" />
+							<img src="images/slide4.jpg" alt="slide item" />
+							<img src="images/slide5.jpg" alt="slide item" />
+						</section>
+						<a class="loadmore">See More of These</a>
+					</section>
+				</section>
+			</main>
+
+			<aside class="aside">
+				<section class="container">
+					<!-- TODO : Blog -->
+					<section class="blog wow fadeInUp" id="blog">
+						<h5 class="blog__subheading">BLOG STORIES</h5>
+						<h3 class="blog__heading">Check Our News</h3>
+						<section class="bloglist wow fadeInLeft">
+							<section class="blog__item">
+								<h6 class="item__title">New Adventure 1</h6>
+								<em class="itm__time">17 March 2021</em>
+								<p class="item__description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+									vel sunt, eius suscipit animi quibusdam velit esse ipsa
+								</p>
+								<i class="bx bx-right-arrow-alt bx-sm arrow__load"></i>
+							</section>
+							<section class="blog__item">
+								<h6 class="item__title">New Adventure 2</h6>
+								<em class="itm__time">17 March 2021</em>
+								<p class="item__description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+									vel sunt, eius suscipit animi quibusdam velit esse ipsa
+								</p>
+								<i class="bx bx-right-arrow-alt bx-sm arrow__load"></i>
+							</section>
+							<section class="blog__item">
+								<h6 class="item__title">New Adventure 3</h6>
+								<em class="itm__time">17 March 2021</em>
+								<p class="item__description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+									vel sunt, eius suscipit animi quibusdam velit esse ipsa
+								</p>
+								<i class="bx bx-right-arrow-alt bx-sm arrow__load"></i>
+							</section>
+						</section>
+					</section>
+
+					<section class="contact wow fadeInUp" id="contact">
+						<h5 class="subheading">CONTACT US</h5>
+						<h3 class="heading">Get in Touch</h3>
+						<form class="contact__form">
+							<section class="input__line">
+								<input type="email" name="email" placeholder="Your email" />
+								<input type="text" name="subject" placeholder="Subject" />
+							</section>
+							<textarea
+								name="message"
+								cols="30"
+								rows="10"
+								placeholder="Message here..."
+							></textarea>
+							<button type="submit" class="btn btn--border-rounded btn__action">
+								Send Message
+							</button>
+						</form>
+					</section>
+				</section>
+			</aside>
+
+			<footer class="footer wow fadeInUp">
+				<h5>DOOB</h5>
+				<h2>CREATIVITY ABOVE</h2>
+				<section class="footer__menu">
+					<a href="#">Home</a>
+					<a href="#">About us</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Blog</a>
+					<a href="#">Contact us</a>
+				</section>
+				<h6>&copy;2021 - Doob, All Right Reserved</h6>
+				<ul class="social__contact">
+					<li class="social__item">
+						<a href="#">
+							<i class="bx bxl-facebook bx-md"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#">
+							<i class="bx bxl-twitter bx-md"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#">
+							<i class="bx bxl-dribbble bx-md"></i>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- TODO : Script -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+			integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+			integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			new WOW().init();
+		</script>
+		<script src="images/index.js"></script>
+	<script defer src="main.js"></script></body>
+</html>
