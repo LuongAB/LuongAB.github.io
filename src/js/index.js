@@ -13,8 +13,6 @@ import "../images/slide3.jpg";
 import "../images/slide4.jpg";
 import "../images/slide5.jpg";
 
-new WOW().init();
-
 const showMenu = () => {
 	const btnOpen = document.querySelector(".open__bar");
 	const btnClose = document.querySelector(".close__bar");

@@ -9,6 +9,7 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 		filename: "[name].js",
 		assetModuleFilename: "images/[name][ext]",
+		publicPath: "",
 		clean: true,
 	},
 	module: {
