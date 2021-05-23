@@ -1,0 +1,104 @@
+.banner {
+	text-align: center;
+	color: $menu-font-color;
+
+	@include Responsive(LG) {
+		@include display-flex(row, wrap, space-between, center);
+		flex-wrap: wrap;
+	}
+
+	&__text {
+		@include display-flex(column, nowrap, center, center);
+		@include Responsive(LG) {
+			max-width: 50%;
+		}
+		@include Responsive(XL) {
+			margin-top: 5rem;
+		}
+	}
+
+	&__heading {
+		font-size: $font-size-level-4;
+		@include Responsive(LG) {
+			font-size: $font-size-level-3;
+		}
+		@include Responsive(XL) {
+			font-size: $font-size-level-2;
+		}
+	}
+
+	&__description {
+		font-size: $font-size-level-6;
+		@include Responsive(LG) {
+			font-size: $font-size-level-5;
+		}
+	}
+
+	&__action {
+		font-size: 1rem;
+		margin-top: 1.5rem;
+		display: inherit;
+		flex-direction: row;
+
+		button {
+			color: $background-color;
+			font-weight: 600;
+			padding: 1rem;
+		}
+
+		button:first-child {
+			background-color: $button-font-color;
+			border: none;
+		}
+
+		button:last-child {
+			margin-left: 1rem;
+			color: $menu-font-color;
+			border: none;
+			outline: none;
+			background-color: transparent;
+		}
+	}
+
+	&__image {
+		img {
+			&:first-child {
+				z-index: -1;
+				position: absolute;
+				right: 0;
+
+				@include Responsive(MD) {
+					top: none;
+				}
+				@include Responsive(LG) {
+					max-width: 40%;
+					top: 8rem;
+				}
+			}
+
+			&:last-child {
+				z-index: 2;
+				position: absolute;
+				top: 25rem;
+				right: 2rem;
+				width: 80vw;
+				object-fit: cover;
+				@include Responsive(MD) {
+					max-width: 30%;
+					right: 10%;
+				}
+
+				@include Responsive(LG) {
+					right: 0;
+					max-width: 30%;
+					top: 12rem;
+				}
+
+				@include Responsive(XL) {
+					right: 5rem;
+					top: 14rem;
+				}
+			}
+		}
+	}
+}

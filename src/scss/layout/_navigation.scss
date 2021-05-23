@@ -1,0 +1,109 @@
+.menu {
+	@include display-flex(column, wrap, space-evenly, center);
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	transition: all 0.3s ease;
+	transform: translateY(-100%);
+	padding: 2rem 0;
+
+	font-size: $font-size-level-5;
+	font-weight: 600;
+	line-height: 2.5;
+
+	background-color: $bar-background;
+	color: $background-color;
+
+	z-index: 999;
+	text-align: center;
+
+	@include Responsive(LG) {
+		@include display-flex(row, nowrap, space-around, baseline);
+		position: relative;
+		background-color: $background-color;
+		transform: none;
+		padding: 0;
+		font-size: 1rem;
+
+		.close__bar {
+			display: none;
+		}
+	}
+
+	@include Responsive(XL) {
+		font-size: 1.1rem;
+	}
+
+	&__left {
+		display: inherit;
+		flex-direction: column;
+
+		a {
+			color: $bar-color;
+			transition: all 0.3s ease;
+			&:hover {
+				color: $background-color;
+			}
+		}
+
+		@include Responsive(LG) {
+			a {
+				color: $menu-font-color;
+				&:hover {
+					color: $button-font-color;
+				}
+			}
+			flex-direction: row;
+			justify-content: space-evenly;
+			flex: 2;
+		}
+	}
+
+	&__right {
+		margin-top: 2rem;
+		@include display-flex(column, wrap, center, center);
+		@include Responsive(LG) {
+			flex-direction: row;
+			align-items: baseline;
+		}
+
+		@include Responsive(XL) {
+			margin-left: 5rem;
+		}
+	}
+
+	&__language {
+		max-width: 5rem;
+		margin-bottom: 1rem;
+		margin-right: 0.8rem;
+
+		font-weight: 700;
+		color: $menu-font-color;
+
+		background-color: transparent;
+
+		border: none;
+		cursor: pointer;
+
+		&__item {
+			cursor: pointer;
+			border: none;
+		}
+	}
+
+	&__contact {
+		font-weight: 600;
+		color: $button-font-color;
+		background-color: $background-color;
+		border: none;
+		box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+			rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	}
+}
+
+.close__bar {
+	padding-top: 1rem;
+	color: $bar-color;
+}

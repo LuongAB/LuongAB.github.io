@@ -1,0 +1,20 @@
+.header {
+	@include display-flex(row, nowrap, space-between, flex-start);
+	padding: 1rem 2rem;
+
+	@include Responsive(LG) {
+		align-items: baseline;
+		.open__bar {
+			display: none;
+		}
+	}
+	@include Responsive(XL) {
+		padding: 1.5rem 3rem;
+	}
+}
+
+.logo {
+	@include Responsive(XL) {
+		margin-left: 5rem;
+	}
+}

@@ -1,0 +1,51 @@
+.about {
+	@include display-flex(column, nowrap, center, center);
+	text-align: center;
+	margin-top: 7rem;
+	line-height: 2;
+
+	@include Responsive(LG) {
+		margin-top: 15rem;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	img {
+		@include Responsive(LG) {
+			max-width: 40%;
+			margin-right: 5rem;
+		}
+	}
+
+	&__subheading {
+		color: $button-font-color;
+		font-size: 0.8rem;
+		@include Responsive(LG) {
+			font-size: 1rem;
+		}
+	}
+
+	&__heading {
+		color: $menu-font-color;
+		font-size: $font-size-level-5;
+		@include Responsive(LG) {
+			font-size: 1.2rem;
+		}
+
+		@include Responsive(XL) {
+			font-size: 2rem;
+		}
+	}
+
+	&__description {
+		font-size: $font-size-level-6;
+		color: $menu-font-color;
+		@include Responsive(LG) {
+			font-size: 1.1rem;
+		}
+	}
+}
+
+.arrow {
+	text-align: left;
+}

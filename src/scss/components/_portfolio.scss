@@ -1,0 +1,31 @@
+.portfolio {
+	margin-top: 5rem;
+
+	&__heading {
+		font-size: $font-size-level-5;
+		color: $menu-font-color;
+		text-align: left;
+		margin-bottom: 1.5rem;
+		@include Responsive(LG) {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.loadmore {
+	margin-top: 1rem;
+	font-size: $font-size-level-6;
+	color: $button-font-color;
+	font-weight: 600;
+
+	@include Responsive(MD) {
+		margin-top: 2rem;
+	}
+	@include Responsive(XL) {
+		font-size: 1.2rem;
+	}
+}
+
+.gallery {
+	@include display-flex(row, nowrap, space-evenly, center);
+}

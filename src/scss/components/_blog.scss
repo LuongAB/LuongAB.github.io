@@ -1,0 +1,65 @@
+.blog {
+	font-size: 0.8rem;
+	color: $menu-font-color;
+	margin-top: 4rem;
+
+	@include Responsive(LG) {
+		margin-top: 10rem;
+	}
+
+	&__item {
+		@include display-flex(column, wrap, center, flex-start);
+		padding: 1.5rem;
+		background-color: $box-shadow-color;
+		border-radius: 0.5rem;
+	}
+
+	&__subheading {
+		color: $button-font-color;
+		@include Responsive(MD) {
+			font-size: 0.8rem;
+		}
+		@include Responsive(XL) {
+			font-size: 1rem;
+		}
+	}
+
+	&__heading {
+		@include Responsive(MD) {
+			font-size: 1.2rem;
+		}
+		@include Responsive(XL) {
+			font-size: 2rem;
+		}
+	}
+}
+
+.bloglist {
+	@include display-flex(row, wrap, space-between, center);
+}
+
+.item {
+	&__title {
+		font-size: 1rem;
+		@include Responsive(MD) {
+			font-size: 1.2rem;
+		}
+	}
+	&__time {
+		font-size: 0.6rem;
+		@include Responsive(MD) {
+			font-size: 0.8rem;
+		}
+	}
+	&__description {
+		font-size: 0.7rem;
+		@include Responsive(MD) {
+			font-size: 1rem;
+		}
+	}
+}
+
+.arrow__load {
+	color: $button-font-color;
+	align-self: center;
+}

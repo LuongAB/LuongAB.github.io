@@ -1,0 +1,39 @@
+.container-fluid {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+
+	@include Responsive(MD) {
+		max-width: 720px;
+	}
+	@include Responsive(LG) {
+		max-width: 960px;
+	}
+	@include Responsive(XL) {
+		max-width: 1140px;
+	}
+}
+
+.show__menu {
+	transform: translateY(0%) !important;
+}
+
+.subheading {
+	color: $button-font-color;
+}
+
+.heading {
+	color: $menu-font-color;
+	font-size: $font-size-level-5;
+	@include Responsive(XL) {
+		font-size: 1.8rem;
+	}
+}
+
+.description {
+	font-size: $font-size-level-6;
+	color: $menu-font-color;
+}

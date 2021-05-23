@@ -1,0 +1,46 @@
+.contact {
+	margin-top: 4rem;
+
+	@include Responsive(LG) {
+		margin-top: 10rem;
+	}
+
+	&__form {
+		margin-top: 2rem;
+		@include display-flex(column, nowrap, center, stretch);
+
+		button {
+			margin-top: 2rem;
+			@include Responsive(MD) {
+				align-self: center;
+			}
+		}
+	}
+
+	.subheading {
+		@include Responsive(MD) {
+			font-size: 0.8rem;
+		}
+		@include Responsive(LG) {
+			font-size: 1rem;
+		}
+	}
+}
+
+.input__line {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@include Responsive(LG) {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	input {
+		flex: 1;
+		@include Responsive(LG) {
+			&:first-child {
+				margin-right: 1rem;
+			}
+		}
+	}
+}

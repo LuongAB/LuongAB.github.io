@@ -1,0 +1,61 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: $menu-font-color;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+main,
+aside {
+	padding: 0 1rem;
+
+	section {
+		margin-top: 1rem;
+	}
+	@include Responsive(LG) {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+input,
+textarea {
+	background-color: $input-bg;
+	color: $input-color;
+	padding: 1rem 1.2rem;
+	font-size: $font-size-level-6;
+	font-weight: 600;
+	border: none;
+	margin-bottom: 1rem;
+
+	@include Responsive(LG) {
+		font-size: 1.1rem;
+	}
+}

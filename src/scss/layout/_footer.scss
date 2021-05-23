@@ -1,0 +1,52 @@
+.footer {
+	background: $menu-font-color;
+	text-align: center;
+	line-height: 2.5;
+	margin-top: 3rem;
+	padding-top: 0.5rem;
+	
+	@include Responsive(LG) {
+		font-size: 1.1rem;
+	}
+
+	h2 {
+		color: $button-font-color;
+		font-size: $font-size-level-5;
+	}
+
+	h5 {
+		color: $background-color;
+	}
+
+	h6 {
+		color: $background-color;
+		font-size: 0.7rem;
+	}
+
+	&__menu {
+		a {
+			color: $background-color;
+			font-weight: 600;
+			transition: all 0.4s ease;
+			&:hover {
+				color: $bar-color;
+			}
+		}
+	}
+}
+
+.social__contact {
+	@include display-flex(row, wrap, center, center);
+	margin-top: 1rem;
+	max-width: 50%;
+	margin: 0 auto;
+	li a i {
+		color: $background-color;
+		&:hover {
+			color: $bar-color;
+		}
+	}
+	@include Responsive(LG) {
+		justify-content: space-evenly;
+	}
+}

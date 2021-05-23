@@ -1,0 +1,59 @@
+.service {
+	@include display-flex(column, wrap, center, center);
+	text-align: center;
+	margin-top: 25rem;
+
+	@include Responsive(SM) {
+		margin-top: 120vw;
+	}
+
+	@include Responsive(MD) {
+		margin-top: 110vw;
+	}
+
+	@include Responsive(LG) {
+		margin-top: 15rem;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@include Responsive(XL) {
+		margin-top: 25rem;
+	}
+
+	&__text {
+		@include display-flex(column, nowrap, center, center);
+		@include Responsive(LG) {
+			flex-direction: column;
+			align-items: center;
+			text-align: left;
+			margin-right: 8rem;
+		}
+		@include Responsive(XL) {
+			margin-right: 3rem;
+		}
+	}
+
+	&__heading {
+		font-size: $font-size-level-5;
+		color: $menu-font-color;
+		margin-bottom: 1rem;
+		@include Responsive(LG) {
+			font-size: 1.4rem;
+			max-width: 30vw;
+		}
+
+		@include Responsive(XL) {
+			font-size: 2.2rem;
+			max-width: 50vw;
+		}
+	}
+}
+
+.cardList {
+	@include Responsive(LG) {
+		@include display-flex(row, nowrap, space-evenly, baseline);
+		max-width: 70%;
+	}
+}
