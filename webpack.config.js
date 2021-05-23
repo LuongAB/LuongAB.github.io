@@ -37,7 +37,7 @@ module.exports = {
 		new HtmlWebPackPlugin({
 			title: "Doob",
 			inject: "body",
-			template: "./src/index.html",
+			template: "./index.html",
 		}),
 		new MiniCssExtractPlugin(),
 	],
