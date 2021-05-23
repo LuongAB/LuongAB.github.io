@@ -678,7 +678,7 @@ body {
 @media only screen and (min-width: 992px) {
   .btn__action {
     font-size: 0.8rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.3rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -689,7 +689,7 @@ body {
 @media only screen and (min-width: 1200px) {
   .btn {
     font-size: 1.1rem;
-    padding: 1.15rem 1.4rem;
+    padding: 1rem 1.15rem;
   }
 }
 
@@ -1024,6 +1024,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+.gallery img:not(:first-child) {
+  margin-left: 1.5rem;
+}
 
 .blog {
   font-size: 0.8rem;
@@ -1044,6 +1047,14 @@ body {
   padding: 1.5rem;
   background-color: #e2e5e5;
   border-radius: 0.5rem;
+}
+.blog__item:not(:first-child) {
+  margin-left: 1.5rem;
+}
+@media only screen and (min-width: 992px) {
+  .blog__item {
+    padding: 1.5rem 2rem;
+  }
 }
 .blog__subheading {
   color: #ff3946;

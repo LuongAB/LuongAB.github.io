@@ -28,4 +28,7 @@
 
 .gallery {
 	@include display-flex(row, nowrap, space-evenly, center);
+	img:not(:first-child) {
+		margin-left: 1.5rem;
+	}
 }
